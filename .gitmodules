@@ -1,0 +1,3 @@
+[submodule "lib/vcui"]
+	path = lib/vcui
+	url = https://github.com/brahmikumar/vcui.git
