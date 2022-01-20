@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:investor/src/home/screens/login.dart';
 import 'package:investor/src/home/screens/overview.dart';
 import 'package:investor/vcui/lib/vui/app_theme/themedata.dart';
 
@@ -19,7 +20,9 @@ class MyApp extends StatelessWidget {
       ),*/
       initialRoute: "/",
       routes: {
-        "/" : (context) => const Overview(),
+        "/" : (context) => const Login(),
+        Overview.routeName : (context) => const Overview(),
+        Login.routeName : (context) => const Login(),
       },
     );
   }

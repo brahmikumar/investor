@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:investor/vcui/lib/vui/colors/colors.dart';
 import 'package:investor/vcui/lib/vui/ui_components/buttons.dart';
-import 'package:investor/vcui/lib/vui/ui_components/buttons/button.dart';
+import 'package:investor/vcui/lib/vui/ui_components/bottom_model_sheet.dart';
 
 class Overview extends StatelessWidget {
   static const routeName = "/overview";
@@ -88,8 +88,16 @@ class Overview extends StatelessWidget {
                       const SizedBox(height: 10,),
                       //const Text("8.17% per month", style: TextStyle(color: Colors.amber))
                       const Text("8.17% per month", style: TextStyle(color: AppColors.colorRedPrimary)),
-                      button("BtnName", (){}),
-                      VButton("Submit", (){}),
+                      button("Get Data", (){
+                        bottomSheet(
+                          context,
+                          title: "Test",
+                          message: "welcome",
+                          isCloseButton: true,
+                          modelSheetRadius: 15.0,
+                        );
+                      }),
+
                     ],
                   ),
                 ),
