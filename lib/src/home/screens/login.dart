@@ -72,8 +72,8 @@ class _LoginState extends State<Login> {
             textButton("Terms and Conditions", (){
               bottomSheet(
                 context,
-                title: "Terms and Conditions",
-                message: "Terms",
+                title: "Terms And Conditions",
+                message: "Login Terms and conditions",
                 isCloseButton: true,
                 modelSheetRadius: 10.0,
               );
